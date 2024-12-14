@@ -53,7 +53,7 @@ export default async function DirectoryPage() {
         <section>
           <h2 className="text-2xl font-semibold text-blue-800 mb-4">Blog Posts</h2>
           <ul className="grid gap-3">
-            {blogPosts.map((post) => (
+            {blogPosts.map((post: any) => (
               <li key={post.id}>
                 <Link 
                   href={`/blog/${post.slug}`}
